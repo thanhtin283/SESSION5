@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Dịch văn bản </h3>
+    <h4>Enlight</h4>
+    <input type="text" id="nhap" /></br>
+    </br>
+    <input type="button" value="dịch " onclick="nhan();" />
+    <h4>việt nam</h4>
+    <input type="text" id="result" value="" />
+
+</body>
+<script>
+    let ANH = ['hello', 'i love you'];
+    let VIET = ['xin chào', 'tôi yêu bạn'];
+
+    function nhan() {
+        let x = document.getElementById('nhap').value;
+        for (let i = 0; i < ANH.length; i++) {
+            if (x === ANH[i]) {
+                document.getElementById('result').value = VIET[i];
+            }
+        }
+
+    }
+</script>
+
+</html>
